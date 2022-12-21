@@ -19,7 +19,6 @@
 		A0C0B52F29508D870081AFFD /* iOSReferenceAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C0B52E29508D870081AFFD /* iOSReferenceAppUITestsLaunchTests.swift */; };
 		A0C0B53C29508EEF0081AFFD /* AppDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C0B53B29508EEF0081AFFD /* AppDelegateExtension.swift */; };
 		A0C0B53F2950909B0081AFFD /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = A0C0B53E2950909B0081AFFD /* FirebaseMessaging */; };
-		A0C0B54B295092570081AFFD /* moostnofiticationservice.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A0C0B544295092560081AFFD /* moostnofiticationservice.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A0C0B557295095FF0081AFFD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0C0B556295095FF0081AFFD /* GoogleService-Info.plist */; };
 		A0C0B558295095FF0081AFFD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0C0B556295095FF0081AFFD /* GoogleService-Info.plist */; };
 		A0C0B559295095FF0081AFFD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0C0B556295095FF0081AFFD /* GoogleService-Info.plist */; };
@@ -41,13 +40,6 @@
 			remoteGlobalIDString = A0C0B50429508D840081AFFD;
 			remoteInfo = iOSReferenceApp;
 		};
-		A0C0B549295092570081AFFD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A0C0B4FD29508D840081AFFD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A0C0B543295092560081AFFD;
-			remoteInfo = moostnofiticationservice;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -57,7 +49,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				A0C0B54B295092570081AFFD /* moostnofiticationservice.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,7 +192,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				A0C0B54A295092570081AFFD /* PBXTargetDependency */,
 			);
 			name = iOSReferenceApp;
 			packageProductDependencies = (
@@ -401,11 +391,6 @@
 			isa = PBXTargetDependency;
 			target = A0C0B50429508D840081AFFD /* iOSReferenceApp */;
 			targetProxy = A0C0B52929508D870081AFFD /* PBXContainerItemProxy */;
-		};
-		A0C0B54A295092570081AFFD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A0C0B543295092560081AFFD /* moostnofiticationservice */;
-			targetProxy = A0C0B549295092570081AFFD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

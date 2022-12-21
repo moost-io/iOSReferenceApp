@@ -29,11 +29,11 @@ extension AppDelegate : UNUserNotificationCenterDelegate {
         // Perform the task associated with the action.
         switch response.actionIdentifier {
         case "ACCEPT_ACTION":
-            sendNotificationInteraction(completionHandler: completionHandler, actionQualifier: "")
+            sendNotificationInteraction(completionHandler: completionHandler, actionQualifier: "ACCEPT_ACTION")
             break
             
         case "DECLINE_ACTION":
-            sendNotificationInteraction(completionHandler: completionHandler, actionQualifier: "")
+            sendNotificationInteraction(completionHandler: completionHandler, actionQualifier: "DECLINE_ACTION")
             break
         
         case UNNotificationDismissActionIdentifier:
