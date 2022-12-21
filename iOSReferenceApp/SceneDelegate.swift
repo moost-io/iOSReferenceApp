@@ -1,12 +1,6 @@
-//
-//  SceneDelegate.swift
-//  iOSReferenceApp
-//
-//  Created by Lucas Senn on 19.12.22.
-//
-
 import UIKit
 
+@available(iOS 13.0, *)
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?

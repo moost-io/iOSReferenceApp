@@ -1,10 +1,3 @@
-//
-//  iOSReferenceAppUITestsLaunchTests.swift
-//  iOSReferenceAppUITests
-//
-//  Created by Lucas Senn on 19.12.22.
-//
-
 import XCTest
 
 final class iOSReferenceAppUITestsLaunchTests: XCTestCase {

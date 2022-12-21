@@ -17,6 +17,13 @@
 		A0C0B52329508D870081AFFD /* iOSReferenceAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C0B52229508D870081AFFD /* iOSReferenceAppTests.swift */; };
 		A0C0B52D29508D870081AFFD /* iOSReferenceAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C0B52C29508D870081AFFD /* iOSReferenceAppUITests.swift */; };
 		A0C0B52F29508D870081AFFD /* iOSReferenceAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C0B52E29508D870081AFFD /* iOSReferenceAppUITestsLaunchTests.swift */; };
+		A0C0B53C29508EEF0081AFFD /* AppDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C0B53B29508EEF0081AFFD /* AppDelegateExtension.swift */; };
+		A0C0B53F2950909B0081AFFD /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = A0C0B53E2950909B0081AFFD /* FirebaseMessaging */; };
+		A0C0B54B295092570081AFFD /* moostnofiticationservice.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A0C0B544295092560081AFFD /* moostnofiticationservice.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A0C0B557295095FF0081AFFD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0C0B556295095FF0081AFFD /* GoogleService-Info.plist */; };
+		A0C0B558295095FF0081AFFD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0C0B556295095FF0081AFFD /* GoogleService-Info.plist */; };
+		A0C0B559295095FF0081AFFD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0C0B556295095FF0081AFFD /* GoogleService-Info.plist */; };
+		A0C0B55A295095FF0081AFFD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0C0B556295095FF0081AFFD /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +41,32 @@
 			remoteGlobalIDString = A0C0B50429508D840081AFFD;
 			remoteInfo = iOSReferenceApp;
 		};
+		A0C0B549295092570081AFFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0C0B4FD29508D840081AFFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0C0B543295092560081AFFD;
+			remoteInfo = moostnofiticationservice;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A0C0B54F295092570081AFFD /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A0C0B54B295092570081AFFD /* moostnofiticationservice.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		A0B405412951F6F4005809F2 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		A0B405432951F6F4005809F2 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
 		A0C0B50529508D840081AFFD /* iOSReferenceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSReferenceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C0B50829508D840081AFFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0C0B50A29508D840081AFFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +81,10 @@
 		A0C0B52829508D870081AFFD /* iOSReferenceAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSReferenceAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C0B52C29508D870081AFFD /* iOSReferenceAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSReferenceAppUITests.swift; sourceTree = "<group>"; };
 		A0C0B52E29508D870081AFFD /* iOSReferenceAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSReferenceAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A0C0B53B29508EEF0081AFFD /* AppDelegateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateExtension.swift; sourceTree = "<group>"; };
+		A0C0B544295092560081AFFD /* moostnofiticationservice.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = moostnofiticationservice.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0C0B5502950940F0081AFFD /* iOSReferenceApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOSReferenceApp.entitlements; sourceTree = "<group>"; };
+		A0C0B556295095FF0081AFFD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0C0B53F2950909B0081AFFD /* FirebaseMessaging in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,15 +110,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A0C0B541295092560081AFFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A0B405402951F6F4005809F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0B405412951F6F4005809F2 /* UserNotifications.framework */,
+				A0B405432951F6F4005809F2 /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A0C0B4FC29508D840081AFFD = {
 			isa = PBXGroup;
 			children = (
 				A0C0B50729508D840081AFFD /* iOSReferenceApp */,
 				A0C0B52129508D870081AFFD /* iOSReferenceAppTests */,
 				A0C0B52B29508D870081AFFD /* iOSReferenceAppUITests */,
+				A0B405402951F6F4005809F2 /* Frameworks */,
 				A0C0B50629508D840081AFFD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +146,7 @@
 				A0C0B50529508D840081AFFD /* iOSReferenceApp.app */,
 				A0C0B51E29508D870081AFFD /* iOSReferenceAppTests.xctest */,
 				A0C0B52829508D870081AFFD /* iOSReferenceAppUITests.xctest */,
+				A0C0B544295092560081AFFD /* moostnofiticationservice.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +154,8 @@
 		A0C0B50729508D840081AFFD /* iOSReferenceApp */ = {
 			isa = PBXGroup;
 			children = (
+				A0C0B556295095FF0081AFFD /* GoogleService-Info.plist */,
+				A0C0B5502950940F0081AFFD /* iOSReferenceApp.entitlements */,
 				A0C0B50829508D840081AFFD /* AppDelegate.swift */,
 				A0C0B50A29508D840081AFFD /* SceneDelegate.swift */,
 				A0C0B50C29508D840081AFFD /* ViewController.swift */,
@@ -109,6 +164,7 @@
 				A0C0B51629508D870081AFFD /* LaunchScreen.storyboard */,
 				A0C0B51929508D870081AFFD /* Info.plist */,
 				A0C0B51129508D840081AFFD /* iOSReferenceApp.xcdatamodeld */,
+				A0C0B53B29508EEF0081AFFD /* AppDelegateExtension.swift */,
 			);
 			path = iOSReferenceApp;
 			sourceTree = "<group>";
@@ -140,12 +196,17 @@
 				A0C0B50129508D840081AFFD /* Sources */,
 				A0C0B50229508D840081AFFD /* Frameworks */,
 				A0C0B50329508D840081AFFD /* Resources */,
+				A0C0B54F295092570081AFFD /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A0C0B54A295092570081AFFD /* PBXTargetDependency */,
 			);
 			name = iOSReferenceApp;
+			packageProductDependencies = (
+				A0C0B53E2950909B0081AFFD /* FirebaseMessaging */,
+			);
 			productName = iOSReferenceApp;
 			productReference = A0C0B50529508D840081AFFD /* iOSReferenceApp.app */;
 			productType = "com.apple.product-type.application";
@@ -186,6 +247,23 @@
 			productReference = A0C0B52829508D870081AFFD /* iOSReferenceAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		A0C0B543295092560081AFFD /* moostnofiticationservice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0C0B54C295092570081AFFD /* Build configuration list for PBXNativeTarget "moostnofiticationservice" */;
+			buildPhases = (
+				A0C0B540295092560081AFFD /* Sources */,
+				A0C0B541295092560081AFFD /* Frameworks */,
+				A0C0B542295092560081AFFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = moostnofiticationservice;
+			productName = moostnofiticationservice;
+			productReference = A0C0B544295092560081AFFD /* moostnofiticationservice.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -207,6 +285,9 @@
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = A0C0B50429508D840081AFFD;
 					};
+					A0C0B543295092560081AFFD = {
+						CreatedOnToolsVersion = 14.2;
+					};
 				};
 			};
 			buildConfigurationList = A0C0B50029508D840081AFFD /* Build configuration list for PBXProject "iOSReferenceApp" */;
@@ -218,6 +299,9 @@
 				Base,
 			);
 			mainGroup = A0C0B4FC29508D840081AFFD;
+			packageReferences = (
+				A0C0B53D2950909B0081AFFD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = A0C0B50629508D840081AFFD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -225,6 +309,7 @@
 				A0C0B50429508D840081AFFD /* iOSReferenceApp */,
 				A0C0B51D29508D870081AFFD /* iOSReferenceAppTests */,
 				A0C0B52729508D870081AFFD /* iOSReferenceAppUITests */,
+				A0C0B543295092560081AFFD /* moostnofiticationservice */,
 			);
 		};
 /* End PBXProject section */
@@ -235,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0C0B51829508D870081AFFD /* LaunchScreen.storyboard in Resources */,
+				A0C0B557295095FF0081AFFD /* GoogleService-Info.plist in Resources */,
 				A0C0B51529508D870081AFFD /* Assets.xcassets in Resources */,
 				A0C0B51029508D840081AFFD /* Main.storyboard in Resources */,
 			);
@@ -244,6 +330,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0C0B558295095FF0081AFFD /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +338,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0C0B559295095FF0081AFFD /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0C0B542295092560081AFFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0C0B55A295095FF0081AFFD /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +360,7 @@
 				A0C0B50D29508D840081AFFD /* ViewController.swift in Sources */,
 				A0C0B50929508D840081AFFD /* AppDelegate.swift in Sources */,
 				A0C0B50B29508D840081AFFD /* SceneDelegate.swift in Sources */,
+				A0C0B53C29508EEF0081AFFD /* AppDelegateExtension.swift in Sources */,
 				A0C0B51329508D840081AFFD /* iOSReferenceApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +382,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A0C0B540295092560081AFFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -297,6 +401,11 @@
 			isa = PBXTargetDependency;
 			target = A0C0B50429508D840081AFFD /* iOSReferenceApp */;
 			targetProxy = A0C0B52929508D870081AFFD /* PBXContainerItemProxy */;
+		};
+		A0C0B54A295092570081AFFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0C0B543295092560081AFFD /* moostnofiticationservice */;
+			targetProxy = A0C0B549295092570081AFFD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -370,7 +479,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -424,7 +533,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -439,11 +548,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iOSReferenceApp/iOSReferenceApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4PT6CAVL6A;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 8947E4EVUP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOSReferenceApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -454,8 +567,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.moost.iOSReferenceApp;
+				PRODUCT_BUNDLE_IDENTIFIER = io.moost.moostiosreference;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -467,11 +581,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iOSReferenceApp/iOSReferenceApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4PT6CAVL6A;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 8947E4EVUP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOSReferenceApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -482,8 +600,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.moost.iOSReferenceApp;
+				PRODUCT_BUNDLE_IDENTIFIER = io.moost.moostiosreference;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -497,9 +616,9 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4PT6CAVL6A;
+				DEVELOPMENT_TEAM = 8947E4EVUP;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.moost.iOSReferenceAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -517,9 +636,9 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4PT6CAVL6A;
+				DEVELOPMENT_TEAM = 8947E4EVUP;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.moost.iOSReferenceAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -536,7 +655,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4PT6CAVL6A;
+				DEVELOPMENT_TEAM = 8947E4EVUP;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.moost.iOSReferenceAppUITests;
@@ -554,7 +673,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4PT6CAVL6A;
+				DEVELOPMENT_TEAM = 8947E4EVUP;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.moost.iOSReferenceAppUITests;
@@ -563,6 +682,58 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = iOSReferenceApp;
+			};
+			name = Release;
+		};
+		A0C0B54D295092570081AFFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8947E4EVUP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = moostnofiticationservice/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = moostnofiticationservice;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.moost.moostiosreference.moostnofiticationservice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A0C0B54E295092570081AFFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8947E4EVUP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = moostnofiticationservice/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = moostnofiticationservice;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.moost.moostiosreference.moostnofiticationservice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -605,7 +776,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		A0C0B54C295092570081AFFD /* Build configuration list for PBXNativeTarget "moostnofiticationservice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0C0B54D295092570081AFFD /* Debug */,
+				A0C0B54E295092570081AFFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A0C0B53D2950909B0081AFFD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A0C0B53E2950909B0081AFFD /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0C0B53D2950909B0081AFFD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		A0C0B51129508D840081AFFD /* iOSReferenceApp.xcdatamodeld */ = {

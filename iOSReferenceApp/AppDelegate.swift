@@ -1,31 +1,54 @@
-//
-//  AppDelegate.swift
-//  iOSReferenceApp
-//
-//  Created by Lucas Senn on 19.12.22.
-//
-
 import UIKit
 import CoreData
+import Firebase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
+    let gcmMessageIDKey = "gcm.message_id"
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        FirebaseApp.configure()
+                             
+        
+        Messaging.messaging().delegate = self
+        
+        // Register for remote notifications. This shows a permission dialog on first run, to
+        // show the dialog at a more appropriate time move this registration accordingly.
+        UNUserNotificationCenter.current().delegate = self
+
+        let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
+        UNUserNotificationCenter.current().requestAuthorization(
+          options: authOptions,
+          completionHandler: { _, _ in }
+        )
+
+        application.registerForRemoteNotifications()
+
+        let positiveAction = UNNotificationAction(identifier: "ACCEPT_ACTION", title: "Open App")
+        let declineAction = UNNotificationAction(identifier: "DECLINE_ACTION", title: "Don't notify again")
+        
+         // Define the notification type
+         let moostRecommendationCategory =
+               UNNotificationCategory(identifier: "MOOST_RECOMMENDATION",
+               actions: [positiveAction, declineAction],
+               intentIdentifiers: [],
+               hiddenPreviewsBodyPlaceholder: "",
+               options: .customDismissAction)
+         // Register the notification type.
+        UNUserNotificationCenter.current().setNotificationCategories([moostRecommendationCategory])
+                             
         return true
     }
 
     // MARK: UISceneSession Lifecycle
-
+    @available(iOS 13.0, *)
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.
         // Use this method to select a configuration to create the new scene with.
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
-
+    @available(iOS 13.0, *)
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
         // Called when the user discards a scene session.
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.

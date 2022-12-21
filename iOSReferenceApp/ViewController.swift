@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  iOSReferenceApp
-//
-//  Created by Lucas Senn on 19.12.22.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
